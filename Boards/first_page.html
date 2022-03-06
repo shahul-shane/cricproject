@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="./first_page.css">
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li><img src="../Assets/home.png" alt="" width="25" height="25"> <a href="./first_page.html" id="home">Home</a></li>
+            <li><img src="../Assets/new_match.png" alt="" width="25px" height="25px"> <a href="../Toss/toss.html " id="new_match">New Match</a></li>
+            <li><img src="../Assets/cricket-ground.png" alt="" width="25px" height="25px"><a href="../Boards/history.html" id="history"> History</a></li>
+            <li><img src="../Assets/logout.png" alt="" width="25px" height="25px"><a href="#" id="logout"> Log Out</a></li>
+        </ul>
+    </div>
+    <div class="choose">
+        <div class="new-match">
+            <button class="player-icon" onclick="window.location.href = '../Toss/toss.html'"><img src="../Assets/cricket-player.png" alt="" width="150px" height="150px"></button>
+            <p onclick="window.location.href = '../Toss/toss.html'">New Match</p>
+        </div>
+        <div class="history">
+            <button class="ground-icon" onclick="window.location.href = '../Boards/history.html'"><img src="../Assets/cricket-ground.png" alt="" width="150px" height="150px"></button>
+            <p>History</p>
+        </div>
+    </div>
+</body>
+</html>

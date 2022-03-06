@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: rgba(207, 207, 207, 0.397);
+}
+.container{
+    background: rgba(255, 255, 255, 0.89);     
+    height: 50px;
+}
+
+.container ul{
+    list-style-type: none;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.container li{
+    width: 120px;
+    height: 25px;
+    color: rgb(190, 0, 181);
+    margin: 14px 40px 0 20px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    text-align: center;
+    
+}
+.container li img{
+    top: 3px;
+    cursor: pointer;
+}
+.container li a{
+    top: -5px;
+    position: relative;
+}
+#home, #new_match, #history,
+#logout{
+    text-decoration: none;
+}
+.title{
+    margin: 4% 0 0 0%;
+    font-size: 35px;
+    text-align: center;
+
+}
+.history-box{
+    background-color: #fff;
+    width: 80%;
+    height: auto;
+    margin: 3% 0 0 10%;
+    border-radius: 10px;
+    box-shadow: 5px 10px 50px 1px rgba(8, 41, 131, 0.1);
+}
+.teams{
+    padding: 2% 0 2% 2%;
+    line-height: 40px;
+}
+.team-name{
+    font-size: 25px;
+}
+.team-score{
+    font-size: 25px;
+    margin-left: 40%;
+}
+.dots{
+    visibility: hidden;
+}
+.winner{
+    font-size: 20px;
+    text-align: center;
+    margin: 0% 0 -1% 0; 
+}
+.won-by-runs{
+    visibility: hidden;
+}

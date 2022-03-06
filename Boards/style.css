@@ -1,0 +1,276 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: rgba(207, 207, 207, 0.397);
+}
+.container{
+    background: rgba(255, 255, 255, 0.89);     
+    height: 50px;
+}
+
+.container ul{
+    list-style-type: none;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.container li{
+    width: 120px;
+    height: 25px;
+    color: rgb(190, 0, 181);
+    margin: 14px 40px 0 20px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    text-align: center;
+    
+}
+.container li img{
+    top: 3px;
+    cursor: pointer;
+}
+.container li a{
+    top: -5px;
+    position: relative;
+}
+#home, #new_match, #history,
+#logout{
+    text-decoration: none;
+}
+.team-names{
+    margin: 1% 0 0 10%;        
+}
+.team-names p {
+    font-size: 28px;
+}
+.cur-team{
+    margin: 1% 0 0 10%;
+}
+.cur-team span{
+    font-size: 20px;
+}
+.cur-team .score{
+    font-size: 30px;
+}
+.cur-team .wicket{
+    font-size: 30px;
+}
+.cur-team .cur-over{
+    font-size: 22px;
+}
+.line{
+    width: 59%;
+    height: 1px;
+    background-color: black;
+    margin-left: 10%;
+}
+
+.players{
+    background-color: #fff;
+    width: 59%;
+    height: auto;
+    margin: 3% 0 0 10%;
+    border-radius: 10px;
+    box-shadow: 5px 10px 50px 1px rgba(8, 41, 131, 0.1);
+}
+.players .player-header span{
+    margin: 0% 0 0 100px;
+}
+.player-header{
+    padding-top: 1%;
+}
+.players .head-batsman{
+    font-size: 20px;
+    color: rgb(48, 47, 47);
+}
+.line1{
+    height: 1px;
+    margin-top: 5px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.247);
+}
+
+.player-batsman1 .bats-name1{
+    padding: 2% 0 0 12%;
+}
+.player-batsman1 p{
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.player-batsman1 .p1-runs{
+    margin: -2.8% 0 0 35%;
+}
+.player-batsman1 .p1-bowls{
+    margin: -2.8% 0 0 49%;
+}
+.player-batsman1 .p1-fours{
+    margin: -2.8% 0 0 64%;
+}
+.player-batsman1 .p1-sixes{
+    margin: -2.8% 0 0 80%;
+}
+.player-batsman2 .bats-name2{
+    padding: 1% 0 0 12%;
+}
+.player-batsman2 p{
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.player-batsman2 .p2-runs{
+    margin: -2.8% 0 0 35%;
+}
+.player-batsman2 .p2-bowls{
+    margin: -2.8% 0 0 49%;
+}
+.player-batsman2 .p2-fours{
+    margin: -2.8% 0 0 64%;
+}
+.player-batsman2 .p2-sixes{
+    margin: -2.8% 0 0 80%;
+}
+.line2{
+    height: 1px;
+    margin-top: 15px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.247);
+}
+
+.players .player-header1{
+    margin: 1%;
+}
+.players .player-header1{
+    margin-left: 0%;
+}
+.player-header1 span:nth-child(1){
+    padding-left: 12.5%;
+}
+.player-header1 span:nth-child(2){
+    padding-left: 15%;
+}
+.player-header1 span:nth-child(3){
+    padding-left: 12%;
+}
+.player-header1 span:nth-child(4){
+    padding-left: 12%;
+}
+.player-header1 span:nth-child(5){
+    padding-left: 14%;
+}
+
+.line3{
+    height: 1px;
+    margin-top: 5px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.247);
+}
+.player-bowler .bowler{
+    padding: 1% 0 0 12%;
+}
+.player-bowler p{
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.player-bowler .overs{
+    margin: -2.8% 0 0 35%;
+}
+.player-bowler .maiden{
+    margin: -2.8% 0 0 49%;
+}
+.player-bowler .runs{
+    margin: -2.8% 0 0 64%;
+}
+.player-bowler .wickets{
+    margin: -2.8% 0 0 80%;
+}
+
+.this-over{
+    background-color: #fff;
+    width: 39%;
+    height: auto;
+    margin: 3% 0 0 14%;
+    border-radius: 10px;
+    box-shadow: 5px 10px 50px 1px rgba(8, 41, 131, 0.1);
+}
+.this-text {
+    padding-top: 2%;
+    text-align: center;
+}
+.over-board{
+    display: flex;
+    padding: 1%;
+    justify-content: space-around;
+}
+.over-board p {
+    font-size: 22px;
+    border-radius: 20px;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    border-color: rgba(63, 63, 63, 0.356);
+    background-color: #fff;
+    border-style: ridge;
+    border-width: 1px;
+}
+.extras{
+    background-color: #fff;
+    width: 39%;
+    height: auto;
+    margin: 3% 0 0 14%;
+    border-radius: 12px;
+    box-shadow: 5px 10px 50px 1px rgba(8, 41, 131, 0.1);
+}
+.extra-btn{
+    padding: 2% 0% 2% 10%;
+}
+.extra-button{
+    margin: 5% 0 0 15%;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    background-color: rgba(95, 95, 95, 0.158);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: serif;
+    
+}
+.extra-button-wicket{
+    margin: 5% 0 0 33.5%;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    background-color: rgba(95, 95, 95, 0.158);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: serif;
+}
+.numbers-board{
+    background-color: #fff;
+    width: 8%;
+    height: auto;
+    margin: -26% 0 2% 58%;
+    border-radius: 8px;
+    box-shadow: 5px 10px 50px 1px rgba(8, 41, 131, 0.1);
+}
+.numbers{
+    padding: 2% 0% 2% 30%;
+}
+.num-input{ 
+    margin-top: 10%; 
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    background-color: rgba(95, 95, 95, 0.158);
+    border: none;
+    border-radius: 25px;
+    font-size: 22px;
+    font-family: serif;
+    text-align: center;
+}
